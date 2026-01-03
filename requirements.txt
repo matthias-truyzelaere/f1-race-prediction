@@ -1,0 +1,10 @@
+ruff
+tqdm
+numpy
+pandas
+fastf1
+pytest
+xgboost
+watchdog
+streamlit
+scikit-learn

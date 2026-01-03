@@ -1,0 +1,48 @@
+[project]
+name = "f1-race-prediction"
+version = "1.0.0"
+description = "F1 race finishing position prediction using XGBoost"
+readme = "README.md"
+requires-python = "==3.13.*"
+dependencies = [
+    "tqdm>=4.67.1",
+    "numpy>=2.4.0",
+    "fastf1>=3.7.0",
+    "pandas>=2.3.3",
+    "ruff>=0.14.10",
+    "pytest>=9.0.2",
+    "xgboost>=3.1.2",
+    "watchdog>=6.0.0",
+    "streamlit>=1.52.2",
+    "scikit-learn>=1.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.ruff]
+# Set line length
+line-length = 125
+
+# Python version
+target-version = "py314"
+
+[tool.ruff.format]
+# Use double quotes for strings
+quote-style = "double"
+
+# Indent with 4 spaces
+indent-style = "space"
+
+[tool.ruff.lint]
+# Enable common linting rules
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort (import sorting)
+]
+
+# Ignore specific rules if needed
+ignore = []
